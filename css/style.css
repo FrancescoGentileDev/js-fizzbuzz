@@ -18,22 +18,18 @@ body {
   text-align: center;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.2rem;
-}
-
-
-.number {
+  font-size: 1.2rem; 
   background-color: #1389b2;
 }
 
-.fizz {
-  background-color: #0cd6a1;
+.Fizz {
+  background-color: #0cd6a1 !important;
 }
 
-.buzz {
-  background-color: #ffd166;
+.Buzz {
+  background-color: #ffd166 !important;
 }
 
-.fizzBuzz {
-  background-color: #f0466f;
+.FizzBuzz {
+  background-color: #f0466f !important;
 }

@@ -1,24 +1,23 @@
 const container = document.querySelector('.grid');
 
 for (let i = 1; i <= 100; i++) {
-    const div = document.createElement('div');
-    if (i % 3 == 0 && i % 5 == 0) {
-        console.log("FizzBuzz");
-        div.append("FizzBuzz")
-        div.classList.add('fizzBuzz');
-    } else if (i % 3 == 0) {
-        console.log("Fizz");
-        div.append("Fizz")
-        div.classList.add('fizz');
-    } else if (i % 5 == 0) {
-        console.log("Buzz");
-        div.append("Buzz")
-        div.classList.add('buzz');
-    } else {
-        console.log(i);
-        div.append(i)
-        div.classList.add('number');
+  const div = document.createElement("div");
+  let text = "";
+  if (i % 3 == 0) {
+    text += "Fizz";
     }
-    container.append(div)
-}
+    if (i % 5 == 0) {
+    text += "Buzz";
+    }
+  if(text.length == "")  {
+      text += i;
+    }
+  else {
+    div.classList.add(text);
+    }
 
+  console.log(text)
+  div.append(text);
+  
+  container.append(div);
+}
